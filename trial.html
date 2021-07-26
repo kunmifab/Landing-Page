@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* span{
+            width: 2rem;
+            background-color: red;
+            height: 4px;
+            content: '';
+        } */
+        span::before{
+            content: '';
+            display: block;
+            width: 2rem;
+            background-color: red;
+            height: 4px;
+            margin-bottom: 2px;
+            transform: rotate(135deg);
+        }
+        span::after{
+            display: block;
+            width: 2rem;
+            background-color: red;
+            height: 4px;
+            content: '';
+            margin-top: 2px;
+            transform: rotate(45deg);
+        }
+        .bars{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bars">
+        <span></span>
+    </div>
+</body>
+</html>
